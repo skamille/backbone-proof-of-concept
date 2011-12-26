@@ -21,3 +21,12 @@ The rails application is configured to allow CORS AJAX requests only from http:/
 
 6. `rails server` to startup the server_spoof app.
 
+
+==TODOS==
+
+# figure out testing - jasmine and sinon are in the lib dir.
+# figure out what we're going to do with sessions.  How do we handle auth?  Talk to Chris about what his auth api looks like - he said it was oauth like.
+# create product pages
+# style the demo
+# figure out asset packaging - consider Jammit
+# 
