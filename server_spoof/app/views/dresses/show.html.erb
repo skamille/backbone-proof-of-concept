@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dress.name %>
+</p>
+
+<p>
+  <b>Designer name:</b>
+  <%= @dress.designer_name %>
+</p>
+
+<p>
+  <b>Love:</b>
+  <%= @dress.love %>
+</p>
+
+<p>
+  <b>Retail cost:</b>
+  <%= @dress.retail_cost %>
+</p>
+
+<p>
+  <b>Rental cost:</b>
+  <%= @dress.rental_cost %>
+</p>
+
+
+<%= link_to 'Edit', edit_dress_path(@dress) %> |
+<%= link_to 'Back', dresses_path %>

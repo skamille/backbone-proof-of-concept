@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Rent The Runway Dress Grid</title>
+		<script type="text/javascript" src="../lib/jquery-1.7.1.js" ></script>
+		<script type="text/javascript" src="../lib/underscore.js" ></script>
+		<script type="text/javascript" src="../lib/backbone.js" ></script>
+		<script type="text/javascript" src="../lib/json2.js" ></script>
+		<script type="text/javascript" src="../application.js" ></script>
+		<script type="text/javascript" src="../model/Dress.js" ></script>
+		<script type="text/javascript" src="../collection/Dresses.js" ></script>
+		<script type="text/javascript" src="../view/DressGrid.js" ></script>
+		<script type="text/javascript" src="../router/Grid.js" ></script>
+	</head>
+	<body>
+		<div id="dress-grid">
+			<ul>
+			</ul>
+		</div>
+		<script id="dress-grid-box" type="x-tmpl">
+			<h1>{{name}}</h1>
+			by: {{designer_name}}
+			Love == {{love}}<br />
+			Rental Cost: ${{rental_cost}}
+			Retail Cost: ${{retail_cost}}
+		</script>
+	</body>
+</html>

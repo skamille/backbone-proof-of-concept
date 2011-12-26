@@ -1,0 +1,31 @@
+<h1>Listing dresses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Designer name</th>
+    <th>Love</th>
+    <th>Retail cost</th>
+    <th>Rental cost</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dresses.each do |dress| %>
+  <tr>
+    <td><%= dress.name %></td>
+    <td><%= dress.designer_name %></td>
+    <td><%= dress.love %></td>
+    <td><%= dress.retail_cost %></td>
+    <td><%= dress.rental_cost %></td>
+    <td><%= link_to 'Show', dress %></td>
+    <td><%= link_to 'Edit', edit_dress_path(dress) %></td>
+    <td><%= link_to 'Destroy', dress, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dress', new_dress_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  designer_name: MyString
+  love: false
+  retail_cost: 1.5
+  rental_cost: 1.5
+
+two:
+  name: MyString
+  designer_name: MyString
+  love: false
+  retail_cost: 1.5
+  rental_cost: 1.5
