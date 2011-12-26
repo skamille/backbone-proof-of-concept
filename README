@@ -1,0 +1,23 @@
+Proof of concept of static only storefront implementation.
+
+
+==Configuring your environment==
+1. Checkout this code.
+2. Make sure apache2 is installed.
+3. Set up a softlink from document root to the location that you checked out this code.
+  - You can findout where your document root is by looking at ${apache_home}/sites-enabled/000-default (or similar).  There will be a line something like: 
+DocumentRoot xyz
+
+For me, document root was /var/www - this is the ubuntu 11.10 default.
+I checked out the codebase to ~/dev/backbone_proof
+So, my softlink command looked like:
+$ sudo ln -s ~/dev/backbone_proof/ storefront
+
+The rails application is configured to allow CORS AJAX requests only from http://localhost, so just loading the page with file://... won't work.
+
+4. Install rails 3.1 - in whatever way you prefer.  For me on a stock ubuntu install I installed ruby 1.9.2 through rvm, and then did a `rvm do 1.9.2 gem install rails`.
+
+5. `rake db:migrate` the rails app.
+
+6. `rails server` to startup the server_spoof app.
+
